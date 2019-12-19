@@ -56,9 +56,15 @@ public class LineChartsValues {
 		return eated;
 	}
 	
-	public Double getAlcoolValue(double t) {
-		double A= (((getEthanolVolume()*0.789)/(M*C))-(eated()*0.01*(t/60)));
+	public Double getAlcoolValue() {
+		double A= (getEthanolVolume()*0.789)/(M*C);
 		return A;
+	}
+	
+	public double getZeroValue(){
+		double t;
+		t = (getAlcoolValue()*60)/(eated()*0.01);
+		return t/60;
 	}
 	
 	public XYChart.Series<Number, Number> getGraph() {
@@ -67,26 +73,14 @@ public class LineChartsValues {
 		series1.getData().add(new XYChart.Data<>(0, 0));
 		
 		if(eat) {
-			series1.getData().add(new XYChart.Data<>(1, getAlcoolValue(0)));
+			series1.getData().add(new XYChart.Data<>(1, getAlcoolValue()));
 			start = 1;
 		} else {
-			series1.getData().add(new XYChart.Data<>(1, getAlcoolValue(0)));
+			series1.getData().add(new XYChart.Data<>(0.5, getAlcoolValue()));
 			start = 0.5;
 		}
 		
-		for(double i=0; i<10000; i++) {
-			double alcoolemicValue = getAlcoolValue(i);
-			if(alcoolemicValue >= 0) {
-				series1.getData().add(new XYChart.Data<>(start + i/60, alcoolemicValue));
-			}
-	    	
-		}
+		series1.getData().add(new XYChart.Data<>((start+getZeroValue()), 0));
 		return series1;
 	}
-	
-	
-	public void setLineChart(LineChart<Number,Number> LineChart){
-
-	}
-	
 }
