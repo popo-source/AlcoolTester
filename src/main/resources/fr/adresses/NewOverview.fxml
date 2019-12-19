@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.adresses.views.NewOverviewController">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="290.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="42.0" layoutY="14.0" text="What do you want to add ?">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="98.0" layoutY="59.0" mnemonicParsing="false" onAction="#handleNewPerson" text="Person" />
+            <Button layoutX="42.0" layoutY="59.0" mnemonicParsing="false" onAction="#handleNewAlcool" text="Alcool" />
+            <Button cancelButton="true" layoutX="183.0" layoutY="59.0" mnemonicParsing="false" onAction="#handleNewCancel" text="Cancel" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

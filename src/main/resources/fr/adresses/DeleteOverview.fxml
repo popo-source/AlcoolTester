@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="100.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.adresses.views.DeleteOverviewController">
+   <children>
+      <Button defaultButton="true" layoutX="59.0" layoutY="47.0" maxWidth="150.0" mnemonicParsing="false" onAction="#handleOk" text="Yes" AnchorPane.topAnchor="55.0" />
+      <Button cancelButton="true" layoutX="198.0" layoutY="47.0" mnemonicParsing="false" onAction="#handleNo" text="Cancel" AnchorPane.topAnchor="55.0" />
+      <Label layoutX="89.6" layoutY="16.0" prefHeight="25.0" prefWidth="177.0" text="Do you really want to delete?" AnchorPane.leftAnchor="70.0" />
+   </children>
+</AnchorPane>

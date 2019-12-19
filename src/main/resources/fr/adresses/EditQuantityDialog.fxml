@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="100.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.adresses.views.EditQuantityDialogController">
+   <children>
+      <Button defaultButton="true" layoutX="195.0" layoutY="61.0" mnemonicParsing="false" onAction="#handleOk" text="Ok" />
+      <Button cancelButton="true" layoutX="234.0" layoutY="61.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+      <Label layoutX="23.0" layoutY="25.0" text="Quantity (cl)" />
+      <TextField fx:id="quantityField" layoutX="98.0" layoutY="21.0" prefHeight="25.0" prefWidth="172.0" />
+   </children>
+</AnchorPane>
