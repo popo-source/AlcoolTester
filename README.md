@@ -1,4 +1,4 @@
-## Alcoholmeter
+## AlcoholTester
 
 ## Paul Hauser // Lucas Gigondan // Gil Flassch--Trauth
 https://github.com/popo-source/AlcoolTester
