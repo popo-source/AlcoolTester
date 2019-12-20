@@ -41,7 +41,7 @@ public class MainApp extends Application {
         alcoolData.add(new Alcool("Jagermeister", 35.0));
         alcoolData.add(new Alcool("Heineken", 5.0));
         alcoolData.add(new Alcool("B52", 25.0));
-        alcoolData.add(new Alcool("Vin", 12.0));
+        alcoolData.add(new Alcool("Wine", 12.0));
         alcoolData.add(new Alcool("Whisky", 40.0));
         alcoolData.add(new Alcool("Vodka", 40.0));
         alcoolData.add(new Alcool("Pastis", 45.0));
